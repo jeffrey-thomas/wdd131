@@ -27,7 +27,7 @@ footer, main, header, aside{
 header{
     display:block;
     position:relative;
-    background-color: steelblue;
+    background-color: hsl(207, 44%, 20%);
     color:white;
     height:150px;
     grid-column:1 / 3;
@@ -61,7 +61,7 @@ aside{
 
 footer{
     grid-column:1/3;
-    background-color:steelblue;
+    background-color:hsl(207, 44%, 20%);
     color:white;
     height:200px;
     text-align:center;
