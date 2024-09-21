@@ -27,7 +27,7 @@ footer, main, header, aside{
 header{
     display:block;
     position:relative;
-    background-color: hsl(207, 44%, 20%);
+    background-color: rgb(29, 53, 73);
     color:white;
     height:150px;
     grid-column:1 / 3;

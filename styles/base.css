@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Quicksand&display=swap');
+
+:root{
+    --primary-color:hsl(207, 44%, 20%);;
+    --secondary-color:hsl(214, 41%, 90%);
+    --accent1-color:#ffdca0;
+    --accent2-color:lightgray;
+    --heading-font:Merriweather, serif;
+    --paragraph-font:Quicksand, sans-serif;
+    --nav-background-color:hsl(207, 44%, 15%);;
+    --nav-link-color: #eeeeee;
+    --nav-hover-link-color:white;
+    --nav-hover-background-color:hsl(207,44%,25%);
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: var(--paragraph-font);
+}
+
+html{
+    min-width:640px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-align:center;
+    padding:10px;
+    font-family:var(--heading-font);
+    color:var(--primary-color)
+}
+
+h1,h2{
+    color:var(--accent1-color);
+    background-color: var(--primary-color);
+    border-radius:10px 10px 0px 0px;
+}
+
+header{
+    background-color: var(--primary-color);
+    color:var(--accent2-color);
+}
+
+nav{
+    background-color:var(--nav-background-color);
+    display:flex;
+    justify-content: space-around;
+}
+
+nav a{
+    display:block;
+    padding:10px;
+    color:var(--nav-link-color);
+    text-decoration: none;
+    font-size:1.2em;
+}
+
+nav a:hover{
+    background-color: var(--nav-hover-background-color);
+    color:var(--nav-hover-link-color)
+}
+
+.card{
+    border-radius:10px;
+    background-color: var(--secondary-color);
+}
+
+main{
+    display:grid;
+    gap:10px;
+    padding:10px;
+    grid-template-columns: 1fr 250px;
+    max-width:800px;
+    margin:auto;
+}
+
+ul{
+    list-style-position: inside;
+    padding-left:10px;
+}
+
+footer{
+    background-color: var(--primary-color);
+    color:var(--accent1-color);
+    text-align:center;
+    padding:10px;
+}
+
+.bio{
+    display:flex;
+    padding:20px;
+    align-items: center;
+}
+
+.bio img{
+    max-width:200px;
+    max-height:200px;
+    width:auto;
+    height:auto;
+    margin-left:20px;
+}
+
+.location{
+    padding:0px 20px 20px 20px;
+}
