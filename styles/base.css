@@ -21,7 +21,7 @@
 }
 
 html{
-    min-width:640px;
+    min-width:820px;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -87,18 +87,18 @@ footer{
     padding:10px;
 }
 
-.bio{
+.bio, .location{
     display:flex;
     padding:20px;
     align-items: center;
 }
 
-.bio img{
+.card img{
     max-width:200px;
     max-height:200px;
     width:auto;
     height:auto;
-    margin-left:20px;
+    margin:10px;
 }
 
 .location{
