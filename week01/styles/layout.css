@@ -34,7 +34,7 @@ header{
 }
 
 nav{
-    background-color: hsl(207, 44%, 30%);
+    background-color: rgb(43, 80, 110);
     color:lightgray;
     display:flex;
     justify-content: space-evenly;
