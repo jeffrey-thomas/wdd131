@@ -1,0 +1,15 @@
+@media screen and (min-width: 500px){
+    
+    .gallery{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+    nav{
+        display:flex;
+        flex-direction:row;
+    }
+
+    #menu{
+        display:none;
+    }
+}

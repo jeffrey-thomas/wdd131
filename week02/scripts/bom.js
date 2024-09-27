@@ -23,7 +23,6 @@ button.addEventListener('click', function () {
     }
     else {
         input.placeholder = 'Enter chapter here.'
-        
     }
     input.focus();
 });
