@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+:root{
+    --primary-color:#014d30;
+    --secondary-color:hsl(214, 41%, 90%);
+    --accent1-color:#fede0a;
+    --accent2-color:lightgray;
+    --heading-font:Merriweather, serif;
+    --paragraph-font:Quicksand, sans-serif;
+    --nav-background-color:hsl(207, 44%, 15%);;
+    --nav-link-color: #eeeeee;
+    --nav-hover-link-color:white;
+    --nav-hover-background-color:hsl(207,44%,25%);
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: var(--paragraph-font);
+}
+
+html{
+    min-width:500px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-align:center;
+    padding:10px;
+    font-family:var(--heading-font);
+    color:var(--primary-color)
+}
+
+h1,h2{
+    color:var(--accent1-color);
+    background-color: var(--primary-color);
+    width:100%;
+}
+
+header{
+    background-color: var(--primary-color);
+    color:var(--accent2-color);
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+}
+.hero img{
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+ul{
+    list-style: none;
+    padding:1rem;
+}
+
+li{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1rem;
+}
+
+.label{
+    font-weight:bold;
+    text-align:right;
+}
+
+.weather{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weather img{
+    width:25%;
+    height:auto;
+}
+
+footer{
+    background-color: var(--primary-color);
+    color:var(--accent1-color);
+    text-align:center;
+    padding:10px;
+}
+

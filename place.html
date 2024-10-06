@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 - Week03 Place Page - Jeff Thomas</title>
+    <meta name="description" content="Week03 country or place page">
+    <meta name="author" content="Jeff Thomas">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Washington</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="./images/mt-rainier-large.webp" media="(min-width:1000px)">
+                <img src="./images/mt-rainier-small.webp" alt="Mt. Ranier, Washington" width="1500" height="750">
+            </picture>
+            <div class="data">
+                <h2>Data</h2>
+                <ul>
+                    <li>
+                        <p class="label">Area:</p>
+                        <p class="value">71,362 sq mi</p>
+                    </li>
+                    <li>
+                        <p class="label">Population:</p>
+                        <p class="value">7,812,880</p>
+                    </li>
+                    <li>
+                        <p class="label">Capital:</p>
+                        <p class="value">Olympia</p>
+                    </li>
+                    <li>
+                        <p class="label">Languages:</p>
+                        <p class="value">English (de facto)</p>
+                    </li>
+                    <li>
+                        <p class="label">Currency:</p>
+                        <p class="value">U.S. Dollar</p>
+                    </li>
+                    <li>
+                        <p class="label">Time Zone:</p>
+                        <p class="value">UTC-8:00</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="weather">
+                <h2>Weather</h2>
+                <img src="images/weather_icon.svg" alt="weather icon">
+                <ul>
+                    <li>
+                        <p class="label">Temperature:</p>
+                        <p class="value">65°F</p>
+                    </li>
+                    <li>
+                        <p class="label">Conditions:</p>
+                        <p class="value">Scattered Showers</p>
+                    </li>
+                    <li>
+                        <p class="label">Wind:</p>
+                        <p class="value">5 mph</p>
+                    </li>
+                    <li>
+                        <p class="label">Wind Chill:</p>
+                        <p class="value" id="windchill"></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> - Jeff Thomas - Washington, USA</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+</html>
