@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+:root{
+    --primary-color:hsl(207, 44%, 20%);;
+    --secondary-color:hsl(214, 41%, 90%);
+    --accent1-color:#ffdca0;
+    --accent2-color:hsl(207, 44%, 10%);
+    --heading-font:Merriweather, serif;
+    --paragraph-font:Quicksand, sans-serif;
+    --nav-background-color:hsl(207, 44%, 15%);;
+    --nav-link-color: #eeeeee;
+    --nav-hover-link-color:white;
+    --nav-hover-background-color:hsl(207,44%,25%);
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: var(--paragraph-font);
+}
+
+html{
+    min-width:820px;
+}
+
+body{
+    background-color: var(--secondary-color);
+}
+
+footer{
+    background-color: var(--primary-color);
+    color:var(--accent1-color);
+    text-align:center;
+    padding:10px;
+}
+
+.review-form{
+    width:100%;
+    max-width:400px;
+    margin:2rem auto;
+}
+
+.review-form fieldset{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    padding:1rem;
+    background-color: white;
+    border:0.5rem solid var(--primary-color);
+    border-radius:0.5rem;
+}
+
+.review-form legend{
+    text-align:center;
+    padding:10px;
+    font-family:var(--heading-font);
+    color:var(--accent1-color);
+    background-color: var(--primary-color);
+    border-radius:0.5rem;
+}
+
+.review-form > fieldset > label{
+    display:flex;
+    flex-direction: column;
+}
+
+.features{
+    display:flex;
+    flex-direction: column;
+}
+
+.review-form select,
+.review-form input[type='date'],
+.review-form input[type='text']
+{
+    padding:5px;
+}
+
+.review-form input[type='checkbox']{
+    margin-right:0.8rem;
+    margin-top:0.8rem;
+    transform:scale(1.2)
+}
+
+.optional{
+    color:blue
+}
+
+.review-form input[type='submit']{
+    padding:5px;
+}
+
+#stars{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    position:relative;
+    width:160px;
+}
+
+#stars input{
+    display:none;
+}
+
+#stars label{
+    width:30px;
+    height:30px;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:goldenrod;
+    transition:0.2s ease;
+}
+
+#stars label:hover{
+    color:gold;
+    transition:0.2s ease;
+}
+
+#stars label:active::before{
+    transform:scale(1.2);
+}
+
+/* Uncheck stars */
+#stars label:has(input[type='radio'])::before{
+    content:'\2606';
+    position:absolute;
+    top:0;
+    line-height:26px;
+}
+
+/* Checked stars */
+#stars label:has(input[type='radio']:checked)::before,
+#stars label:has(input[type='radio']:checked) ~ label::before{
+    content:'\2605';
+}
