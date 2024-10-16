@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+:root{
+    --primary:#105030;
+    --secondary:#F4F4E0;
+    --font-p: Quicksand, sans-serif;
+    --font-h: Merriweather, serif;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: var(--font-p);
+}
+
+html{
+    background-color: var(--secondary);
+    color:var(--primary)
+}
+
+h1,h2,h3,h4,h5,h6{
+    padding:10px 0;
+    font-family:var(--font-h);
+    color:var(--primary)
+}
+
+h1{
+    text-align:center;
+    color:var(--secondary);
+    background-color: var(--primary);
+
+}
+section{
+    padding:10px;
+}
+
+img{
+    display: block;
+    padding-top:10px;
+}
+
+.wireframe-large{
+    width:512px;
+    height:auto;
+}
+
+.wireframe-small{
+    width:300px;
+    height:auto;
+}
