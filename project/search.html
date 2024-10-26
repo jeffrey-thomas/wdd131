@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 Project - Vancouver, WA Parks - Jeff Thomas</title>
+    <meta name="description" content="WDD131 Project - Vancouver WA, Parks">
+    <meta name="author" content="Jeff Thomas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/parks.css">
+    <link rel="stylesheet" href="styles/parks-large.css">
+    <link rel="stylesheet" href="styles/search.css">
+    <script src="scripts/parks.js" defer></script>
+    <script src="scripts/search.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Vancouver, WA Parks</h1>
+        <a href="#" id="menu"></a>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="#">Find a Park</a>
+            <a href="./details.html">Park Details</a>
+            <a href="./contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Find a Park</h2>
+        <div class="search">
+            <div class="filters">
+                <h3 id="filterTitle">Filters</h3>
+                <a href="#" id="filterMenu" class="open"><h3>Filters</h3></a>
+                <fieldset class="open">
+                    <legend>Play</legend>
+                    <label><input type='checkbox' id="playLawn"><p></p></label>
+                    <label><input type='checkbox' id="playground"><p></p></label>
+                    <label><input type='checkbox' id="swings"><p></p></label>
+                </fieldset>
+                <fieldset class="open">
+                    <legend>Rest</legend>
+                    <label><input type='checkbox' id="benches"><p></p></label>
+                    <label><input type='checkbox' id="tables"><p></p></label>
+                    <label><input type='checkbox' id="restroom"><p></p></label>
+                    <label><input type='checkbox' id="waterFountain"><p></p></label>
+                </fieldset>
+                <fieldset class="open">
+                    <legend>Walking</legend>
+                    <label><input type='checkbox' id="natureTrail"><p></p></label>
+                    <label><input type='checkbox' id="pavedTrail"><p></p></label>
+                </fieldset>
+                <fieldset class="open">
+                    <legend>Sport</legend>
+                    <label><input type='checkbox' id="fullcourt"><p></p></label>
+                    <label><input type='checkbox' id="halfcourt"><p></p></label>
+                    <label><input type='checkbox' id="discGolf"><p></p></label>
+                    <label><input type='checkbox' id="horseshoes"><p></p></label>
+                    <label><input type='checkbox' id="multiuseField"><p></p></label>
+                    <label><input type='checkbox' id="skatePark"><p></p></label>
+                    <label><input type='checkbox' id="soccer"><p></p></label>
+                    <label><input type='checkbox' id="softball"><p></p></label>
+                    <label><input type='checkbox' id="tennis"><p></p></label>
+                    <label><input type='checkbox' id="waterAccess"><p></p></label>
+                </fieldset>
+            </div>
+            <div>
+                <h3 id="results">Results</h3>
+                <div id="gallery">
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> - Jeff Thomas - Washington, USA</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+</html>

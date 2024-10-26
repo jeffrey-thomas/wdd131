@@ -3,7 +3,7 @@
 
 
 :root{
-    --primary-color:hsl(207, 44%, 20%);;
+    --primary-color:hsl(207, 44%, 20%);
     --secondary-color:hsl(214, 41%, 90%);
     --accent1-color:#ffdca0;
     --accent2-color:hsl(207, 44%, 10%);

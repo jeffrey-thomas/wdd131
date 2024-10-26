@@ -1,0 +1,44 @@
+.contact-form{
+    width:100%;
+    max-width:400px;
+    margin:2rem auto;
+}
+
+.contact-form fieldset{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    padding:1rem;
+    background-color: white;
+    border:0.5rem solid var(--primary-color);
+    border-radius:0.5rem;
+}
+
+.contact-form legend{
+    text-align:center;
+    padding:10px;
+    font-family:var(--heading-font);
+    color:var(--accent1-color);
+    background-color: var(--primary-color);
+    border-radius:0.5rem;
+}
+
+.contact-form > fieldset > label{
+    display:flex;
+    flex-direction: column;
+}
+
+.contact-form select,
+.contact-form input[type='text']
+{
+    padding:5px;
+}
+
+
+.required{
+    color:red
+}
+
+.contact-form input[type='submit']{
+    padding:5px;
+}
